@@ -143,13 +143,6 @@ nav ul {
     gap: 1rem;
     margin: 0;
     padding: 0;
-    transition: max-height 0.5s ease-out;
-    max-height: 0;
-    overflow: hidden;
-}
-
-nav ul.active {
-    max-height: 500px; /* Adjust according to the number of nav items */
 }
 
 nav li {
@@ -384,26 +377,8 @@ footer {
     }
 }
 
+
 @keyframes slide-in {
     0% { opacity: 0; transform: translateX(-100%); }
     100% { opacity: 1; transform: translateX(0); }
-}
-
-.move-to-top {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 50%;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.5rem;
-    transition: background 0.3s;
-    cursor: pointer;
-}
-
-.move-to-top:hover {
-    background-color: #555;
 }
