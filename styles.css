@@ -1,7 +1,7 @@
 :root {
     --gradient: linear-gradient(
-        45deg, rgb(221, 67, 238) 0%,
-        rgba(173, 139, 251, 1) 25%,
+        45deg, rgb(177, 0, 197) 0%,
+        rgb(76, 9, 231) 25%,
         rgb(188, 241, 241) 50%,
         rgba(132, 254, 183, 1) 75%,
         rgb(126, 240, 91) 100%
@@ -11,9 +11,21 @@
     --header-height: 60px;
 }
 
+
 @keyframes letter-by-letter {
     0% { opacity: 0; transform: translateY(-10px); }
     100% { opacity: 1; transform: translateY(0); }
+}
+
+.para{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+}
+
+.span{
+    
+    animation: slide-in 5s ease forwards;
+
 }
 
 .hello {
@@ -22,31 +34,14 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    background-size: 300px;
-    animation: bg-animations 4s infinite alternate-reverse;
+    background-size: 300px;animation: bg-animations 4s infinite alternate-reverse
 }
+
 
 @keyframes bg-animations {
     0% { background-position: left; }
     100% { background-position: right; }
 }
-
-.name {
-    display: inline-block;
-    animation: letter-by-letter 0.5s ease forwards;
-    opacity: 0;
-}
-
-.name span {
-    display: inline-block;
-    opacity: 0;
-    background-color: #555;
-}
-
-.name span:nth-child(1) { animation-delay: 0.1s; }
-.name span:nth-child(2) { animation-delay: 0.2s; }
-.name span:nth-child(3) { animation-delay: 0.3s; }
-/* Add delays for other letters as needed */
 
 .self {
     display: flex;
@@ -194,10 +189,11 @@ section {
 .image-block {
     width: 300px;
     height: 300px;
+    
     border-radius: 50%;
     overflow: hidden;
     margin: 20px 0;
-    animation: slide-in 1s ease forwards;
+    animation: slide-in 3s ease forwards;
     opacity: 0;
     transform: translateX(-100%);
 }
@@ -218,6 +214,7 @@ section {
     text-decoration: none;
     display: inline-block;
     margin-top: 20px;
+    animation: slide-in 3s ease forwards;
     transition: background 0.3s;
 }
 
@@ -226,10 +223,11 @@ section {
 }
 
 .socials a {
-    margin: 0 20px;
-    color: #333;
+    margin: 0 30px;
+    color: hsl(143, 97%, 73%);
     text-decoration: none;
     font-size: 1.5em;
+    animation: slide-in 7s ease forwards;
     
 }
 
@@ -257,20 +255,28 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
 }
 
 .skill-card {
-    background: #000000;
-    border: 1px solid #ddd;
+    background: #50464652;
+    border: 3px solid #ddd;
+    border-radius: 20px;
     padding: 1em;
     margin: 1em;
-    width: 45%;
+    width: 15%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.skill-card img{
+    
+    height: 70px;
+    width: 60px;
+}
+
 .skill-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-15px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -392,12 +398,13 @@ footer {
     100% { opacity: 1; transform: translateX(0); }
 }
 
-/* Styling for the button with your specified conditions */
+
 #myBtn {
     display: none;
     position: fixed;
     bottom: 20px;
     right: 30px;
+    hor-align: unset;
     z-index: 99;
     font-size: 18px;
     border: none;
@@ -448,3 +455,49 @@ footer {
     }
 }
 
+.container {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .container li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    margin: 0 10px;
+    cursor: pointer;
+   }
+
+   .container li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    border-radius: 6px;
+    background: #111;
+    transition: all 0.3s ease-in;
+   }
+
+   .container li:hover:before {
+    transform: rotate(360deg);
+    border-radius: 50%;
+   }
+
+   .container li a span {
+    font-size: 27px;
+    line-height: 70px;
+    color: whitesmoke;
+    transition: all 0.3s ease-out;
+   }
+
+   .container li:hover a span {
+    transform: scale(1.1);
+   }
