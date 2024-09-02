@@ -1,9 +1,12 @@
-// Toggle navigation
-document.getElementById('navbar-toggler').addEventListener('click', function () {
-    const navbarNav = document.querySelector('nav ul');
-    navbarNav.classList.toggle('active');
+const menuIcon = document.querySelector('#menu-icon');
+const navbar = document.querySelector('.navbar');
+const navbg = document.querySelector('.nav-bg');
+
+menuIcon.addEventListener('click', () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+    navbg.classList.toggle('active');
 });
-let mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};

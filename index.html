@@ -9,34 +9,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <button class="navbar-toggler" id="navbar-toggler">
-                ☰
-            </button>
+    <header class="header">
+        <a href="#" class="logo">Sahil</a>
 
-            <ul>
-                <!-- <li><a href="#home">Home</a></li> -->
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
+    <div class="nav-bg"></div>
+
     <section id="home">
         <div class="hello">
-            <p style="font-size: 90px; 
+            <p style="font-size: 80px; 
     border-color: 1px solid #8f1717;">
-                Hello,
-
-                Welcome to my Portfolio
+                Hello,<br>
+                Welcome to <br>
+                my Portfolio
             </p>
+        </div>
+        <div class="image-block1">
+            <img src="y-bg.png" alt="Profile Picture" style="width:100%; height:100%; object-fit: cover;">
         </div>
         <div class="para">
             <p><span style="animation: slide-in 3s ease forwards;">I</span>
@@ -83,10 +86,6 @@
         </div>
 
         <div class="socials">
-            <a href="https://www.linkedin.com/in/sahil-singh-89b979281/" target="_blank"><i
-                    class="fab fa-linkedin"></i></a>
-            <a href="mailto:sahilsingh0532@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://github.com/sahilsingh0532" target="_blank"><i class="fab fa-github"></i></a>
         </div>
         <div class="resume">
             <a href="S.S. Resume.pdf" download class="cv-button">Download CV</a>
@@ -101,29 +100,22 @@
             <span class="skill-card" data-tooltip="HyperText Markup Language"><img src="html.png"></span>
             <span class="skill-card" data-tooltip="Cascading Style Sheets"><img src="css.png"></span>
             <span class="skill-card" data-tooltip="JavaScript"><img src="js.png"></span>
+            <span class="skill-card" data-tooltip="Frontend Developer"><img src="github.png"></span>
+            <span class="skill-card" data-tooltip="Mobile application Developer"><img src="github.png"></span>
             <span class="skill-card" data-tooltip="TypeScript"><img src="TS.png"></span>
             <span class="skill-card" data-tooltip="Python"><img src="py.png"></span>
             <span class="skill-card" data-tooltip="C++ Programming Language"><img src="Cpp.png"></span>
             <span class="skill-card" data-tooltip="Firebase"><img src="fire.png"></span>
-            <span class="skill-card" data-tooltip="GitHub"><img src="git.png"></span>
-            <span class="skill-card" data-tooltip="GitHub"><img src="react.png"></span>
-            <span class="skill-card" data-tooltip="GitHub"><img src="figma.png"></span>
+            <span class="skill-card" data-tooltip="Git"><img src="git.png"></span>
+            <span class="skill-card" data-tooltip="React"><img src="react.png"></span>
+            <span class="skill-card" data-tooltip="Figma"><img src="figma.png"></span>
             <span class="skill-card" data-tooltip="GitHub"><img src="github.png"></span>
-        </div>
-        <div>
-            <h1>Soft Skills</h1>
-            <span class="skill-card" data-tooltip="Communication"><img src="comm.png"></span>
-            <span class="skill-card" data-tooltip="Creativity"><img src="creativity.png"></span>
-            <span class="skill-card" data-tooltip="Conflict Resolution"><img src=""></span>
-            <span class="skill-card" data-tooltip="Flexibility"><img src=""></span>
-            <span class="skill-card" data-tooltip="Problem solving"><img src=""></span>
-
         </div>
     </section>
 
 
     <section id="experience">
-        <h1>Experience</h1>
+        <h1 style="font-size: 50px;">Experience</h1>
         <div class="timeline">
             <div class="timeline-item">
                 <h3 style="color: rgb(243, 206, 206);">Developer and HR - RCOP</h3>
@@ -135,7 +127,7 @@
     </section>
 
     <section id="projects">
-        <h1>Projects</h1>
+        <h1 style="font-size: 50px;">Projects</h1>
         <div class="projects-container">
             <div class="project-card">
                 <h3>CultXaios</h3>
@@ -168,8 +160,8 @@
         </div>
     </section>
 
-    <section id="contact">
-        <h1>Contact</h1>
+    <section id="contact"> 
+        <h1 style="font-size: 50px;">Contact</h1>
 
         <div class="contact-info">
             <button class="open-button" onclick="openForm()">Contact me here..</button>
