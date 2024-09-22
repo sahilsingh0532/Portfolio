@@ -40,7 +40,7 @@
             </p>
         </div>
         <div class="image-block1">
-            <img src="y-bg.png" alt="Profile Picture" style="width:100%; height:100%; object-fit: cover;">
+            <img src="avatar.jpeg" alt="Profile Picture" style="width:100%; height:100%; object-fit: cover;">
         </div>
         <div class="para">
             <p><span style="animation: slide-in 3s ease forwards;">I</span>
@@ -68,7 +68,7 @@
         </div>
     </section>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Home</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Home</button>
 
     <section id="about">
         <span>
@@ -78,7 +78,7 @@
         </span>
         <div class="self">
             <div class="image-block">
-                <img src="sahil pic.jpg" alt="Profile Picture" style="width:100%; height:100%; object-fit: cover;">
+                <img src="y-bg.png" alt="Profile Picture" style="width:100%; height:100%; object-fit: cover;">
             </div>
             <div class="info">
                 <p>I am a Frontend developer and have contributed in multiple projects, Currently Pursuing my final year in Btech Computer science Engineering also exploring the realm Cybersecurity. i'm a hardworking Tech-enthusiast who loves to work and contribute my expertise where ever it is required  </p>
@@ -126,43 +126,31 @@
             </div>
         </div>
     </section>
-
     <section id="projects">
         <h1 style="font-size: 50px;">Projects</h1>
         <div class="projects-container">
             <div class="project-card">
-                <h3>CultXaios</h3>
+                <h3><u>CultXaios</u></h3>
                 <p>Developed an AI-powered chat platform to enhance global connectivity. Used React js, Typescript, and
                     Firebase technologies.<br> <a href="#" target="_blank">Read more</a>.</p>
             </div>
             <div class="project-card">
-                <h3>KVT</h3>
+                <h3><u>KVT</u></h3>
                 <p>Tokyo 2025 Olympics Anti-Phishing App! This application is designed to help users detect phishing
-                    emails and offers features to assist in ensuring online safety.<a href="#" target="_blank">Read
+                    emails and offers features to assist in ensuring online safety.<a href="https://github.com/sahilsingh0532/KVT1" target="_blank">Read
                         more</a></p>
             </div>
             <div class="project-card">
-                <h3>Simple Chat Page</h3>
+                <h3><u>Simple Chat Page</u></h3>
                 <p>A basic chat page application deployed on Netlify ushing Html Css and javascript. <a
-                        href="https://simplechat1.netlify.app/" target="_blank">Read more.</a>.</p>
+                        href="https://simplechat1.netlify.app/" target="_blank">Checkout.</a>.</p>
             </div>
-            <div class="project-card">
-                <h3></h3>
-                <p>.</p>
-            </div>
-            <div class="project-card">
-                <h3></h3>
-                <p>.</p>
-            </div>
-            <div class="project-card">
-                <h3></h3>
-                <p><a href="" target="_blank"></a>.</p>
-            </div>
+            
         </div>
     </section>
 
     <section id="achieve">
-        <h1 style="font-size: 50px;">Achievements</h1>
+        <h1 style="font-size: 50px; margin-bottom: 2px;">Achievements</h1>
 
 
         <!-- Achievement Cards Slider -->
@@ -170,78 +158,65 @@
             
             <div class="slider">
                 <div class="card">
-                    <h2>Achievement 1</h2>
-                    <p>Details about Achievement 1.</p>
+                    <h2><u>Front-End Development Libraries By Free Code Camp</u>:-</h2>
+                    <p>Developed proficiency in building dynamic web applications by leveraging popular front-end libraries and frameworks such as React, Redux, Bootstrap, Sass, React Router, and jQuery.
+                    </p>
                 </div>
                 <div class="card">
-                    <h2>Achievement 2</h2>
-                    <p>Details about Achievement 2.</p>
+                    <h2><u>CNAv7(Cisco Certified Networking Associate)</u>:-</h2>
+                    <p>I have achieved student level credential for completing CCNAv7: Networks course</p>
                 </div>
                 <div class="card">
-                    <h2>Achievement 3</h2>
-                    <p>Details about Achievement 3.</p>
+                    <h2><u>Flutter workshop by Technobytes , IIT Bombay</u>:-</h2>
+                    <p>I attended the 2 day Offline workshop held by Technobytes team in IIT Bombay</p>
                 </div>
                 <div class="card">
-                    <h2>Achievement 3</h2>
-                    <p>Details about Achievement 3.</p>
+                    <h2><u>Technical event 2023 by TPCT’s COE (Project Exhibition)</u>:-</h2>
+                    <p>I was awarded second position in this department level competition which was held in my college for the project.</p>
                 </div>
-                <div class="card">
-                    <h2>Achievement 3</h2>
-                    <p>Details about Achievement 3.</p>
-                </div>
-                <!-- Add more cards as necessary -->
             </div>
             <button class="button" id="leftBtn">&#8592;</button>
             <button class="button" id="rightBtn">&#8594;</button>
         </div>
-
-        <!-- Right Button -->
-        
     </section>
+    <footer>
+        <section id="contact"> 
+            <h1 style="font-size: 50px;">Contact</h1>
 
-    <section id="contact"> 
-        <h1 style="font-size: 50px;">Contact</h1>
+            <div class="contact-info">
+                <button class="open-button" onclick="openForm()">Contact me here..</button>
 
-        <div class="contact-info">
-            <button class="open-button" onclick="openForm()">Contact me here..</button>
+                <div class="form-popup" id="myForm">
+                    <form action="mailto:sahilsingh0532@gmail.com" method="post" class="form-container">
+                        <h1>Login</h1>
 
-            <div class="form-popup" id="myForm">
-                <form action="mailto:sahilsingh0532@gmail.com" method="post" class="form-container">
-                    <h1>Login</h1>
+                        <label for="name"><b>Full Name</b></label>
+                        <input type="text" placeholder="Enter Your Full Name" name="name" required>
 
-                    <label for="name"><b>Full Name</b></label>
-                    <input type="text" placeholder="Enter Your Full Name" name="name" required>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Your Email" name="email" required>
 
-                    <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Your Email" name="email" required>
+                        <label for="message"><b>Message</b></label>
+                        <textarea placeholder="Enter Your Message" name="message" required
+                            style="height:150px; width: 100%; display: block;"></textarea>
 
-                    <label for="message"><b>Message</b></label>
-                    <textarea placeholder="Enter Your Message" name="message" required
-                        style="height:150px; width: 100%; display: block;"></textarea>
-
-                    <button type="submit" class="btn">Send</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                </form>
+                        <button type="submit" class="btn">Send</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
+                <h1>Want to know more about myself...</h1>
+                <h2>Checkout my socials...</h2>
+                <ul class="container">
+                    <li><a href="mailto:sahilsingh0532@gmail.com"><span class="fab fa-envelope"></span></a></li>
+                    <li><a href="https://github.com/sahilsingh0532"><span class="fab fa-github"></span></a></li>
+                    <li><a href="https://www.linkedin.com/in/sahil-singh-89b979281"><span
+                                class="fab fa-linkedin"></span></a></li>
+                    <li><a href="https://codepen.io/sahilsingh0532"><span class="fab fa-codepen"></span></a></li>
+                </ul>
             </div>
-            <h1>Want to know more about myself...</h1>
-            <h2>Checkout my socials...</h2>
-            <ul class="container">
-                <li><a href="mailto:sahilsingh0532@gmail.com"><span class="fab fa-envelope"></span></a></li>
-                <li><a href="https://github.com/sahilsingh0532"><span class="fab fa-github"></span></a></li>
-                <li><a href="https://www.linkedin.com/in/sahil-singh-89b979281"><span
-                            class="fab fa-linkedin"></span></a></li>
-                <li><a href="https://codepen.io/sahilsingh0532"><span class="fab fa-codepen"></span></a></li>
-            </ul>
-        </div>
-        <footer>
-
             <p>&copy; 2024 Sahil Singh. All rights reserved.</p>
-    
-        </footer>
-    </section>
-
-    
-
+        </section>
+    </footer>
     <script src="script.js"></script>
 </body>
 

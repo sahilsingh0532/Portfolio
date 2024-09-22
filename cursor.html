@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #17171700;
+            cursor: none;
+            height: 120vh;
+        }
+
+        .small {
+            width: 1px;
+            height: 1px;
+            border: 2px solid #ff0000;
+            border-radius: 50%;
+            position: absolute;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        .big {
+            width: 26px;
+            height: 26px;
+            border: 2px solid #00ccff;
+            border-radius: 50%;
+            position: absolute;
+            pointer-events: none;
+            transition: transform 0.1s ease-out; /* Smooth trailing effect */
+        }
+    </style>
+    <title>Cursor</title>
+</head>
+
+<body>
+    <div class="cursor small"></div>
+    <div class="cursor big"></div>
+
+    <script>
+        const cursorSmall = document.querySelector('.small');
+        const cursorBig = document.querySelector('.big');
+
+        let mouseX = 0, mouseY = 0;
+        let bigX = 0, bigY = 0;
+
+        const positionElement = (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+
+            cursorSmall.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+        }
+
+        const animateBigCursor = () => {
+            // Calculate the position of the big circle, slightly behind the small circle
+            bigX += (mouseX - bigX) * 0.1;
+            bigY += (mouseY - bigY) * 0.1;
+
+            cursorBig.style.transform = `translate3d(${bigX - 15}px, ${bigY - 15}px, 0)`; // Adjust for center
+
+            requestAnimationFrame(animateBigCursor);
+        }
+
+        window.addEventListener('mousemove', positionElement);
+        requestAnimationFrame(animateBigCursor); // Start the animation loop for the big circle
+    </script>
+</body>
+
+</html>

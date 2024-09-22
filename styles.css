@@ -1,10 +1,7 @@
 :root {
     --gradient: linear-gradient(
-        45deg, rgb(197, 0, 0) 0%,
-        rgb(231, 227, 9) 25%,
-        #39f300 50%,
-        rgb(16, 0, 245) 75%,
-        rgb(255, 0, 255) 100%
+        45deg, rgb(0, 191, 197) 0%,
+        rgb(138, 101, 206) 100%
     );
     --main-padding: 1rem;
     --main-font-size: 1rem;
@@ -13,9 +10,9 @@
 
 
 h1, h2 {
-    color: #e2acac;
+    color: #f09696;
     text-align: center;
-    
+    cursor: crosshair;    
 }
 
 h3 {
@@ -127,7 +124,7 @@ body, html {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    cursor: default;
+    
     /* background: rgb(9,7,128);
 background: linear-gradient(220deg, rgb(34, 11, 167) 1%, rgba(152,3,56,1) 100%); */
 }
@@ -298,7 +295,7 @@ section {
     background-color: #555;
 }
 
-/* Keyframes for animation */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -310,21 +307,18 @@ section {
     }
 }
 
-/* Initial state of the section */
 #about {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-/* Animation when the section is in view */
 #about.in-view {
     animation: fadeInUp 1s ease forwards;
 }
 
-/* Optional styling for the resume button */
 .cv-button {
-    background-color: #007BFF; /* Example color */
+    background-color: #007BFF; 
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -361,8 +355,8 @@ section {
     padding: 1em;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    height: 100%; /* Ensures that cards stretch to fill the grid item */
-    width: 100%; /* Ensures that cards stretch to fill the grid item */
+    height: 100%; 
+    width: 100%;
     text-align: center;
 }
 
@@ -385,7 +379,7 @@ section {
 
 .skill-card img {
     max-width: 100%;
-    height: auto; /* Keeps aspect ratio */
+    height: auto; 
 }
 
 .skill-card:hover {
@@ -423,7 +417,7 @@ section {
 }
 
 .project-card {
-    background: #1b1b1b;
+    background: #1b1b1bb6;
     border: 1px solid #ddd;
     padding: 1em;
     margin: 1em;
@@ -435,6 +429,7 @@ section {
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #00eeff;
 }
 
 
@@ -443,7 +438,7 @@ section {
 }
 
 footer {
-    background-color: #ff00006b;
+    background-color: #ffffff2d;
     color: #fff;
     text-align: center;
     padding: 0.5em 0;
@@ -493,8 +488,8 @@ footer {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: rgb(63, 207, 233);
-    color: rgb(19, 18, 18);
+    background-color: rgba(63, 208, 233, 0);
+    color: rgb(104, 104, 104);
     cursor: pointer;
     padding: 15px;
     border-radius: 40px;
@@ -503,14 +498,12 @@ footer {
     overflow: hidden;
 }
 
-/* Hover effect with bounce animation */
 #myBtn:hover {
     background-color: #e0eef7;
     transform: scale(1.1);
     box-shadow: 0 8px 15px rgba(63, 207, 233, 0.3);
 }
 
-/* Bounce animation on hover */
 #myBtn:hover::after {
     content: '';
     position: absolute;
@@ -523,7 +516,6 @@ footer {
     animation: bounceEffect 0.6s forwards;
 }
 
-/* Keyframes for the bounce animation */
 @keyframes bounceEffect {
     0% {
         transform: scale(0);
@@ -591,9 +583,9 @@ b{
 }
 
 * {box-sizing: border-box;}
-   /* Button used to open the contact form  */
+
 .open-button {
-    background-color: #41c9ff;
+    background-color: #ff418a;
     color: white;
     margin-top: 50px;
     padding: 16px 20px;
@@ -601,8 +593,7 @@ b{
     cursor: pointer;
     opacity: 0.8;
     position: relative;
-    top: 50%;
-    left: 50%;
+    margin-left: 290px;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 280px;
