@@ -57,9 +57,7 @@ h1:hover::before {
 }
 
 .span{
-    
     animation: slide-in 5s ease forwards;
-
 }
 
 .hello {
@@ -124,9 +122,6 @@ body, html {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
-    /* background: rgb(9,7,128);
-background: linear-gradient(220deg, rgb(34, 11, 167) 1%, rgba(152,3,56,1) 100%); */
 }
 
 .header {
@@ -395,7 +390,7 @@ section {
 
 .timeline-item {
     position: relative;
-    padding: 1em 0;
+    
     margin: 1em 0;
 }
 
